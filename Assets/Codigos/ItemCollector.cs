@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
+    // el comentario
     public int totalItems = 3;
     private int itemsCollected = 0;
 
