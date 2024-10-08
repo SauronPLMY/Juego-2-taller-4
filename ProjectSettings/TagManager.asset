@@ -8,6 +8,8 @@ TagManager:
   - obstaculo
   - trampa
   - rompible
+  - Item
+  - FinalItem
   layers:
   - Default
   - TransparentFX
