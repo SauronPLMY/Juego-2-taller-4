@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class ItemCollector : MonoBehaviour
 {
-    // el comentario
     public int totalItems = 3;
-    private int itemsCollected = 0;
+    public int itemsCollected = 0;
+    public Transform mapaTransform;
+    public TextMeshProUGUI itemsCollectedText;
+    Quaternion nextRotation;
+    public float velocidadRotacion;
+    float lastRotAngle;
 
-    public Text itemsCollectedText;
+    public GameObject finalItemPrefab;
 
     void Start()
     {
@@ -17,6 +21,7 @@ public class ItemCollector : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Item"))
+        {
             itemsCollected++;
             Destroy(collision.gameObject);
             UpdateUI();
@@ -26,25 +31,51 @@ public class ItemCollector : MonoBehaviour
             {
                 SpawnFinalItem();
             }
-        
+        }
+        else if (collision.CompareTag("FinalItem"))
+        {
+            Destroy(collision.gameObject);
+            GoToNextLevel();
+        }
+    }
+
+    private void Update()
+    {
+        mapaTransform.rotation = Quaternion.Lerp(mapaTransform.rotation, nextRotation, velocidadRotacion * Time.deltaTime);
     }
 
     void UpdateUI()
     {
-        itemsCollectedText.text = "Items: " + itemsCollected.ToString() + "/" + totalItems.ToString();
+        if (itemsCollectedText)
+            itemsCollectedText.text = "Items: " + itemsCollected.ToString() + "/" + totalItems.ToString();
     }
 
-    void RotateMap()
+    [ContextMenu("rotar")]
+    public void RotateMap()
     {
-        int randomDirection = Random.Range(0, 2);
-        float rotationAngle = (randomDirection == 0) ? -90f : 90f; 
+        int randomDirection = Random.Range(0, 100);
+        float rotationAngle = (randomDirection > 50) ? -90f : 90f;
+        lastRotAngle += rotationAngle;
 
-        transform.parent.Rotate(0f, 0f, rotationAngle);
+        nextRotation = Quaternion.Euler(0, 0, lastRotAngle);
     }
 
     void SpawnFinalItem()
     {
-        Vector3 centerPosition = new Vector3(0, 0, 0);
-        GameObject finalItem = Instantiate(Resources.Load("FinalItem") as GameObject, centerPosition, Quaternion.identity);
+        if (finalItemPrefab != null)
+        {
+            Vector3 centerPosition = new Vector3(0, 0, 0);
+            Instantiate(finalItemPrefab, centerPosition, Quaternion.identity);
+            Debug.Log("Apareció el Item Final");
+        }
+        else
+        {
+            Debug.LogWarning("Final Item Prefab no asignado en el Inspector");
+        }
+    }
+
+    void GoToNextLevel()
+    {
+        Debug.Log("Has recolectado el último item. Cambiando al siguiente nivel...");
     }
 }
