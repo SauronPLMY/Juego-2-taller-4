@@ -25,7 +25,7 @@ public class ItemCollector : MonoBehaviour
             {
                 SpawnFinalItem();
             }
-        }
+        
     }
 
     void UpdateUI()
