@@ -1,21 +1,26 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;  
+
 public class ItemCollector : MonoBehaviour
 {
     public int totalItems = 3;
-    public int itemsCollected = 0;
+    private int itemsCollected = 0;
     public Transform mapaTransform;
-    public TextMeshProUGUI itemsCollectedText;
+    public TMP_Text itemsCollectedText;
     Quaternion nextRotation;
     public float velocidadRotacion;
     float lastRotAngle;
 
-    public GameObject finalItemPrefab;
+    public GameObject finalItem;
 
     void Start()
     {
         UpdateUI();
+        if (finalItem != null)
+        {
+            finalItem.SetActive(false);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -25,17 +30,18 @@ public class ItemCollector : MonoBehaviour
             itemsCollected++;
             Destroy(collision.gameObject);
             UpdateUI();
-            RotateMap();
+            Invoke("RotateMap", 0.2f);
+            //RotateMap();
 
             if (itemsCollected == totalItems)
             {
-                SpawnFinalItem();
+                ActivateFinalItem(); 
             }
         }
-        else if (collision.CompareTag("FinalItem"))
+        else if (collision.CompareTag("FinalItem"))  
         {
-            Destroy(collision.gameObject);
-            GoToNextLevel();
+            Debug.Log("Final Item Collected!"); 
+            LoadNextScene();  
         }
     }
 
@@ -50,7 +56,6 @@ public class ItemCollector : MonoBehaviour
             itemsCollectedText.text = "Items: " + itemsCollected.ToString() + "/" + totalItems.ToString();
     }
 
-    [ContextMenu("rotar")]
     public void RotateMap()
     {
         int randomDirection = Random.Range(0, 100);
@@ -60,22 +65,30 @@ public class ItemCollector : MonoBehaviour
         nextRotation = Quaternion.Euler(0, 0, lastRotAngle);
     }
 
-    void SpawnFinalItem()
+    void ActivateFinalItem()
     {
-        if (finalItemPrefab != null)
+        if (finalItem != null)
         {
-            Vector3 centerPosition = new Vector3(0, 0, 0);
-            Instantiate(finalItemPrefab, centerPosition, Quaternion.identity);
-            Debug.Log("Apareció el Item Final");
-        }
-        else
-        {
-            Debug.LogWarning("Final Item Prefab no asignado en el Inspector");
+            finalItem.SetActive(true);
         }
     }
 
-    void GoToNextLevel()
+    void LoadNextScene()
     {
-        Debug.Log("Has recolectado el último item. Cambiando al siguiente nivel...");
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        SceneManager.LoadScene(nextSceneIndex);
+        /*
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            Debug.Log("Loading next scene: " + nextSceneIndex);  
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.LogError("No hay más escenas disponibles en Build Settings.");
+        }
+        */
     }
 }
