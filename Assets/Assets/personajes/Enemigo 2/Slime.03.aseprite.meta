@@ -452,6 +452,7 @@ ScriptedImporter:
     cells:
     - name: Slime.03_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
@@ -460,6 +461,7 @@ ScriptedImporter:
       spriteId: 57ce9bd00c42296458e1dcfb26295081
     - name: Slime.03_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 1
@@ -468,6 +470,7 @@ ScriptedImporter:
       spriteId: dfd45ca85f1aeb846875aa16c60a8f26
     - name: Slime.03_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 2
@@ -476,6 +479,7 @@ ScriptedImporter:
       spriteId: 87d3fd7d94be7d244aaa0cc3084a26d8
     - name: Slime.03_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 3
@@ -484,6 +488,7 @@ ScriptedImporter:
       spriteId: a8ef92db4ded5a84381004282d8b34a2
     - name: Slime.03_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 4
@@ -492,6 +497,7 @@ ScriptedImporter:
       spriteId: 015190c506541d546968c4e200d8bb0e
     - name: Slime.03_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 4
@@ -500,6 +506,7 @@ ScriptedImporter:
       spriteId: 5ee3fbb175b16664eafa02ba56228489
     - name: Slime.03_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 3
@@ -508,6 +515,7 @@ ScriptedImporter:
       spriteId: 95447ca9983ed214cbd9f855244ff29e
     - name: Slime.03_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 1
@@ -516,6 +524,7 @@ ScriptedImporter:
       spriteId: 81e8288e0d95e7b458ca25fafa1677ee
     - name: Slime.03_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 2
@@ -524,6 +533,7 @@ ScriptedImporter:
       spriteId: 0bcf494f70f2315479a5371fbf3794dc
     - name: Slime.03_Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 2
@@ -532,6 +542,7 @@ ScriptedImporter:
       spriteId: ce54ad063c95f3449815e6a5bcc8fa44
     - name: Slime.03_Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 2
@@ -540,6 +551,7 @@ ScriptedImporter:
       spriteId: 4c7bb79c9d530fd4388248691db81b55
     - name: Slime.03_Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 2
@@ -548,6 +560,7 @@ ScriptedImporter:
       spriteId: e8d9ce7f9ff36834784bf79e3d340dcb
     - name: Slime.03_Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 2
@@ -556,6 +569,7 @@ ScriptedImporter:
       spriteId: 8d3513a34e32a30498a9bd64d4baba84
     - name: Slime.03_Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 2
@@ -564,6 +578,7 @@ ScriptedImporter:
       spriteId: 563d86df238ac0b41b005774ad3498f1
     - name: Slime.03_Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 2
@@ -572,6 +587,7 @@ ScriptedImporter:
       spriteId: 525ff4780bb5faf4189efaeddf5902d5
     - name: Slime.03_Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 2

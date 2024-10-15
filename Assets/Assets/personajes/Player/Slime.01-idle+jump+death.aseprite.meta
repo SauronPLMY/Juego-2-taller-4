@@ -552,6 +552,7 @@ ScriptedImporter:
     cells:
     - name: Slime.01-idle+jump+death_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 0
@@ -560,6 +561,7 @@ ScriptedImporter:
       spriteId: 398329c68d99db9469bf6514eb7715cc
     - name: Slime.01-idle+jump+death_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -568,6 +570,7 @@ ScriptedImporter:
       spriteId: 52c72c110c25f3649a63887f57b807ed
     - name: Slime.01-idle+jump+death_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -576,6 +579,7 @@ ScriptedImporter:
       spriteId: 050fbf38820d072459bccee57f00aaf1
     - name: Slime.01-idle+jump+death_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -584,6 +588,7 @@ ScriptedImporter:
       spriteId: 1d45ac2ad02ee624c9d86e1ce5422440
     - name: Slime.01-idle+jump+death_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 0
@@ -592,6 +597,7 @@ ScriptedImporter:
       spriteId: 8cdf36384a820464f96f9840aca8c119
     - name: Slime.01-idle+jump+death_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -600,6 +606,7 @@ ScriptedImporter:
       spriteId: 7417b5edae7c99d41b10115a43b682e6
     - name: Slime.01-idle+jump+death_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -608,6 +615,7 @@ ScriptedImporter:
       spriteId: fb2b1316f24572e4cb05fa27357dfd86
     - name: Slime.01-idle+jump+death_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -616,6 +624,7 @@ ScriptedImporter:
       spriteId: d1b33b8f8e7f6b74b80bcb3ff78144b1
     - name: Slime.01-idle+jump+death_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -624,6 +633,7 @@ ScriptedImporter:
       spriteId: 54cc42548227f7748a9e64ab0a168598
     - name: Slime.01-idle+jump+death_Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 3
@@ -632,6 +642,7 @@ ScriptedImporter:
       spriteId: f1df0ac9085b85c44a84ca93d034ba47
     - name: Slime.01-idle+jump+death_Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 18
         y: 10
@@ -640,6 +651,7 @@ ScriptedImporter:
       spriteId: 10a790b7a8e42604d9016b3ff0099d6f
     - name: Slime.01-idle+jump+death_Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 18
@@ -648,6 +660,7 @@ ScriptedImporter:
       spriteId: 4c8d068118c01894aa25cf393c3e5476
     - name: Slime.01-idle+jump+death_Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 13
@@ -656,6 +669,7 @@ ScriptedImporter:
       spriteId: 6701feb474f2cb14190729cb2bdb3fd3
     - name: Slime.01-idle+jump+death_Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 6
@@ -664,6 +678,7 @@ ScriptedImporter:
       spriteId: 2d5aa71ec46a8d2449bcd2000ae2eb46
     - name: Slime.01-idle+jump+death_Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 0
@@ -672,6 +687,7 @@ ScriptedImporter:
       spriteId: a25df3dddc54a3942a591bf76f82aef2
     - name: Slime.01-idle+jump+death_Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 0
@@ -680,6 +696,7 @@ ScriptedImporter:
       spriteId: c9e2c546fc49e72458a45e9bf1b205ac
     - name: Slime.01-idle+jump+death_Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 0
@@ -688,6 +705,7 @@ ScriptedImporter:
       spriteId: 1dda3a949a1a185468c871c9606988a0
     - name: Slime.01-idle+jump+death_Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 0
@@ -696,6 +714,7 @@ ScriptedImporter:
       spriteId: 3c187f8dcca4d5b428f655fe9ca74cae
     - name: Slime.01-idle+jump+death_Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 0
@@ -704,6 +723,7 @@ ScriptedImporter:
       spriteId: 7b9f56f6971c7094b98e0048276a268f
     - name: Slime.01-idle+jump+death_Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 0
@@ -712,6 +732,7 @@ ScriptedImporter:
       spriteId: ebf08306f7258754c8e7800371b037e7
     - name: Slime.01-idle+jump+death_Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 10
         y: 0
