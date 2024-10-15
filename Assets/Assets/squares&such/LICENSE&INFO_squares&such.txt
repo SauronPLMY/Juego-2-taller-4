@@ -1,0 +1,40 @@
+Vector shapes: Squares & Such
+
+This pack contains: 
+- 1 SVG file of 69 black vector shapes
+- 1 JPG file as preview for all the symbols
+- 1 TXT file with usage and license infos (you're reading it now)
+
+Made with Inkscape 1.3 
+© 2023 by Ipomoea
+
+_________ How to _________
+
+I first created these shapes as symbol libraries, to be imported in the free drawing software Krita.
+To import them in Krita 5.1, go to "Settings", select "Manage Resources".
+In the window that opens, click on "Import Resources". Choose the SVG file you want to import.
+When Krita asks you which kind of resource the file you just imported is, select "Symbol Libraries".
+Now find (or open) the "Symbol Libraries" docker to check if your import worked.
+(Don't worry if the shapes appear pixelated in the docker preview)
+Clicking on one symbol and dragging it onto the drawing area will automatically create a new vector layer.
+
+The symbols in the SVG file are scalable to the size of your wish in vector graphics editing softwares, such as Inkscape (free), Adobe Illustrator or Affinity Designer.
+Alternatively, open the file in an IDE and modify the SVG code directly.
+To know more about Inkscape's Symbol Libraries: https://wiki.inkscape.org/wiki/SymbolsDialog
+About SVG: https://developer.mozilla.org/en-US/docs/Web/SVG
+
+_________ Find me on _________
+
+Itch.io: https://ipomoea-ae.itch.io/
+Tumblr: https://ipomoea-ae.tumblr.com/
+Instagram: https://www.instagram.com/ipomoea_ae/
+
+_________ CC BY License _________
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+BY – Credit must be given to the creator
+Complete licensing terms at: https://creativecommons.org/licenses/by/4.0/
+
+_________ Disclaimer _________
+
+These shapes are intended as ornaments for illustrations, comics, games... As is, they may not be suitable for precise geometrical work.
