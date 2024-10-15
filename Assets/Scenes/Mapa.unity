@@ -2047,7 +2047,7 @@ MonoBehaviour:
   normalSpeed: 10
   spasmSpeed: 250
   spasmDuration: 0.6
-  spasmCooldown: 7
+  spasmCooldown: 2
 --- !u!1 &1659242565
 GameObject:
   m_ObjectHideFlags: 0
